@@ -16,5 +16,36 @@ namespace Volume_Calculator
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                
+                double UserInput = double.Parse(textBox1.Text);
+                double Answer = 4.0 / 3.0 * Math.PI * UserInput * UserInput * UserInput;
+                label7.Text = Answer.ToString();
+
+            }
+
+            catch
+            {
+                MessageBox.Show("Enter an integer please.");
+            }
+
+
+
+        }
     }
 }
