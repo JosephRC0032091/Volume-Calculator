@@ -44,7 +44,26 @@ namespace Volume_Calculator
                 MessageBox.Show("Enter an integer please.");
             }
 
+           
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+
+                double UserInput2 = double.Parse(textBox2.Text);
+                double Answer2 = UserInput2 * UserInput2 * UserInput2;
+                label10.Text = Answer2.ToString();
+
+            }
+
+            catch
+            {
+                MessageBox.Show("Enter an integer please.");
+            }
 
         }
     }
